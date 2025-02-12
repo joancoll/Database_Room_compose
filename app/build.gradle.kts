@@ -54,13 +54,11 @@ dependencies {
     // Room
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx) // Suport per coroutines
-    ksp(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler) // Processador de codi per Room
     // ViewModel i LiveData
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-
-    // Compose
     implementation(libs.androidx.runtime.livedata)
 
     testImplementation(libs.junit)
