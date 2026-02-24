@@ -11,14 +11,16 @@ import cat.dam.andy.database_room_compose.model.Item
 fun ContactList(
     contacts: List<Item>,
     onEditClick: (Item) -> Unit,
-    onDeleteClick: (Item) -> Unit
+    onDeleteClick: (Item) -> Unit,
+    onPhotoClick: (Item) -> Unit
 ) {
     LazyColumn(modifier = Modifier.fillMaxSize()) {
         items(contacts) { item ->
             ContactItem(
                 item = item,
                 onEditClick = onEditClick,
-                onDeleteClick = onDeleteClick
+                onDeleteClick = onDeleteClick,
+                onPhotoClick = onPhotoClick
             )
         }
     }
